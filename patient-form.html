@@ -1,0 +1,270 @@
+<!--
+Program Name: patientform.html
+Author: Alison Adraneda
+Date Created: 06/18/2026
+Date Last Edited: 06/18/2026
+Version: 1.0
+Description: Patient Registration Form for MIS 3371 Homework 1
+-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Patient Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="header">
+
+    <img src="cliniclogo.jpg" alt="Clinic Logo" width= "200">
+
+    <h1>A&A Medical Care</h1>
+
+  <p>
+Today's Date:
+<script>
+document.write(new Date().toLocaleDateString());
+</script>
+</p>
+
+</div>
+
+<hr>
+
+<form action="thankyou.html">
+
+    <h2>Account Information</h2>
+
+    <label>User ID:</label>
+    <input type="text" maxlength="20" required>
+
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" maxlength="20" required>
+
+    <br><br>
+
+    <label>Re-enter Password:</label>
+    <input type="password" maxlength="20" required>
+
+    <br><br>
+
+    <h2>Patient Information</h2>
+
+    <label>First Name:</label>
+    <input type="text" maxlength="30" required>
+
+    <br><br>
+
+    <label>Middle Initial:</label>
+    <input type="text" maxlength="1">
+
+    <br><br>
+
+    <label>Last Name:</label>
+    <input type="text" maxlength="30" required>
+
+    <br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" required>
+
+    <br><br>
+
+    <label>Social Security Number:</label>
+    <input type="text" maxlength="11" required>
+    
+
+<br><br>
+
+<h2>Address Information</h2>
+
+<label>Address Line 1:</label>
+<input type="text" maxlength="30" required>
+
+<br><br>
+
+<label>Address Line 2:</label>
+<input type="text" maxlength="30">
+
+<br><br>
+
+<label>City:</label>
+<input type="text" maxlength="30" required>
+
+<br><br>
+
+<label>State:</label>
+
+<select required>
+<option value="">Select State</option>
+
+<option>Alabama</option>
+<option>Alaska</option>
+<option>Arizona</option>
+<option>Arkansas</option>
+<option>California</option>
+<option>Colorado</option>
+<option>Connecticut</option>
+<option>Delaware</option>
+<option>District of Columbia</option>
+<option>Florida</option>
+<option>Georgia</option>
+<option>Hawaii</option>
+<option>Idaho</option>
+<option>Illinois</option>
+<option>Indiana</option>
+<option>Iowa</option>
+<option>Kansas</option>
+<option>Kentucky</option>
+<option>Louisiana</option>
+<option>Maine</option>
+<option>Maryland</option>
+<option>Massachusetts</option>
+<option>Michigan</option>
+<option>Minnesota</option>
+<option>Mississippi</option>
+<option>Missouri</option>
+<option>Montana</option>
+<option>Nebraska</option>
+<option>Nevada</option>
+<option>New Hampshire</option>
+<option>New Jersey</option>
+<option>New Mexico</option>
+<option>New York</option>
+<option>North Carolina</option>
+<option>North Dakota</option>
+<option>Ohio</option>
+<option>Oklahoma</option>
+<option>Oregon</option>
+<option>Pennsylvania</option>
+<option>Puerto Rico</option>
+<option>Rhode Island</option>
+<option>South Carolina</option>
+<option>South Dakota</option>
+<option>Tennessee</option>
+<option>Texas</option>
+<option>Utah</option>
+<option>Vermont</option>
+<option>Virginia</option>
+<option>Washington</option>
+<option>West Virginia</option>
+<option>Wisconsin</option>
+<option>Wyoming</option>
+
+</select>
+
+<br><br>
+
+<label>ZIP Code:</label>
+<input type="text" maxlength="10" required>
+
+<br><br>
+
+<h2>Contact Information</h2>
+
+<label>Phone Number:</label>
+<input type="text" maxlength="15" required>
+
+<br><br>
+
+<label>Email Address:</label>
+<input type="email" maxlength="50" required>
+<br>
+<h2>Medical Information</h2>
+
+
+<label>Current Symptoms:</label>
+
+<br>
+
+<textarea rows="4" cols="40"></textarea>
+
+<br><br>
+
+<label>Medical History:</label>
+
+<br>
+
+<input type="checkbox"> Diabetes
+
+<br>
+
+<input type="checkbox"> Asthma
+
+<br>
+
+<input type="checkbox"> Pneumonia
+
+<br>
+
+<input type="checkbox"> Hepatitis
+
+<br>
+
+<input type="checkbox"> Tuberculosis
+
+<br> 
+
+<h2>Additional Information</h2>
+
+<label>Gender:</label>
+
+<br>
+
+<input type="radio" name="gender"> Male
+
+<input type="radio" name="gender"> Female
+
+<input type="radio" name="gender"> Other
+
+<br><br>
+
+<label>Do you have health insurance?</label>
+<br>
+
+<input type="radio" name="insurance"> Yes
+<input type="radio" name="insurance"> No
+
+<br><br>
+<label>Are your vaccinations up to date?</label>
+
+<br>
+
+<input type="radio" name="vaccinated"> Yes
+
+<input type="radio" name="vaccinated"> No
+<br><br>
+
+<label>Health Rating:</label>
+
+<br>
+
+1 <input type="range" min="1" max="10"> 10
+
+<br><br>
+
+<input type="submit" value="Submit Form">
+
+<input type="reset" value="Clear Form">
+</form>
+<div id="footer">
+
+    <hr>
+
+    <p>A&A Medical Care</p>
+
+    <button>Contact Us</button>
+
+</div>
+</body>
+</html>
